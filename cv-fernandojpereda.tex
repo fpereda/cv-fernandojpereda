@@ -30,10 +30,7 @@
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
 
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+%\nopagenumbers{}
 \begin{document}
 \maketitle
 
@@ -93,20 +90,11 @@ Trabajos realizados:%
 \cvlistitem{Disponibilidad para viajar.}
 \cvlistitem{Gran interés por el modelado, simulación, estimación y control de vehículos autónomos. Con distintas publicaciones científicas en congresos y un artículo en la revista \emph{IEEE Transactions on Industrial Electronics.}}
 
-% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
 \nocite{*}
 \bibliographystyle{plain}
-% \bibliography{publications}       % 'publications' is the name of a BibTeX file
+% \bibliography{publications}
 
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
 \end{document}
 
+% vim: set filetype=tex fileencoding=utf8 et tw=100 spell spelllang=es :
 
-%% end of file `template_en.tex'.
