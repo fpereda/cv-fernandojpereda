@@ -1,12 +1,15 @@
 .PHONY: all clean
 
-all: cv-fernandojpereda.pdf
+all: cv-fernandojpereda.pdf carta-presentacion.pdf
 
 cv-fernandojpereda.pdf: cv-fernandojpereda.tex fjpCV.png
 	latexmk -pdf $<
 
+carta-presentacion.pdf: carta-presentacion.tex
+	latexmk -pdf $<
+
 clean:
-	$(RM) cv-fernandojpereda.pdf *.aux *.dvi *.log *.out *.fdb_latexmk
+	$(RM) cv-fernandojpereda.pdf carta-presentacion.pdf *.aux *.dvi *.log *.out *.fdb_latexmk
 
 push:
 	git push
