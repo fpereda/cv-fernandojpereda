@@ -1,23 +1,23 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3.2cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
 % personal data
-\firstname{Fernando~J.}
+\firstname{Fernando J.}
 \familyname{Pereda}
-%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\title{\normalsize Ingeniero software con formación científica.} % optional, remove the line if not wanted
 \address{Calle Las Pozas 118}{28200 S. L. de El Escorial}    % optional, remove the line if not wanted
-\mobile{646636486}                    % optional, remove the line if not wanted
+\mobile{+34 646636486}                    % optional, remove the line if not wanted
 %\phone{phone (optional)}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{fpereda@gmail.com}                      % optional, remove the line if not wanted
 %\homepage{homepage (optional)}                % optional, remove the line if not wanted
-\extrainfo{Fecha de nacimiento: 29-11-1985} % optional, remove the line if not wanted
-\photo[1in]{fjpCV}
+\extrainfo{29-11-1985} % optional, remove the line if not wanted
+\photo[1in][0.1pt]{fjpCV}
 %\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 
@@ -34,56 +34,85 @@
 \begin{document}
 \maketitle
 
+\section{Experiencia}
+\cventry{desde 09/2011}{Ingeniero de Proyecto}{GMV Aerospace \& Defense S.A.}{}{}{
+    Proyectos para la \emph{European Space Agency} (ESA):
+    \begin{itemize}
+        \item Proyecto SWARM:
+            \begin{itemize}
+                \item Mantenimiento de los procesadores operacionales de nivel 1B.
+                \item Desarrollo de los procesadores operacionales de nivel 2 (L2-CAT2).
+                \item Estudio y desarrollo de los prototipos \emph{Near Real Time} de los procesadores de
+                    nivel 1B.
+            \end{itemize}
+        \item Proyecto \emph{PDGS Evolutions -- Enhanced Online Archive Phase 2}:
+            \begin{itemize}
+                \item Encargado del diseño de arquitectura software de la evolución.
+            \end{itemize}
+    \end{itemize}}
+
+\cventry{12/2010 -- 9/2011 \\ {\em\small (10 meses)}}
+    {Ingeniero Investigador}{UCM / \emph{European Defense Agency} / Ministerio de Defensa}{}{}{
+    Programa NECSAVE.\newline{}%
+    Estudio e investigación en temas de control de flotas de barcos autónomos:%
+    \begin{itemize}%
+        \item Control no lineal y modelos de maniobra.
+        \item Estimación no lineal y fusión multisensorial.
+        \item Sistemas de guiado automático.
+    \end{itemize}}
+
+\cventry{11/2009 -- 12/2010 \\ {\em\small (1 año y 1 mes)}}
+    {Ingeniero Software}{UCM / Navantia / Ministerio de Defensa}{}{}{
+    Programa SIRAMICOR.\newline{}%
+    Diseño e implementación de un simulador de barcos autónomos para desminado automático y de una
+    plataforma experimental.\newline{}%
+    Trabajos realizados:%
+    \begin{itemize}%
+        \item Implementación y simulación de modelos físicos de barcos.
+        \item Diseño e implementación de control automático, tanto en simulación como experimental.
+    \end{itemize}}
+
+\cventry{11/2008 -- 11/2009 \\ {\em\small (1 año)}}
+    {Responsable de Software}{UCM / \emph{European Space Agency}}{}{}{
+    Proyecto SpaceFish, programa RexusBexus.\newline{}%
+    Diseño e implementación de una estación de tierra y el firmware de un autopiloto para un UAV
+    experimental.\newline{}%
+    Trabajos realizados:%
+    \begin{itemize}%
+        \item Desarrollo de los drivers de bajo nivel de los distintos sensores del autopiloto.
+        \item Implementación de un sistema de registro de datos en una tarjeta SD.
+        \item Desarrollo de un protocolo de comunicación y drivers de radio.
+        \item Desarrollo de una estación de tierra para el UAV.
+    \end{itemize}}
+
 \section{Formación Académica}
 \cventry{9/2010 -- 7/2011}{Máster en Investigación en Informática}{Universidad Complutense de Madrid}{}{}{
-	\small
-	Nota media: 9.63. \\
-	Trabajo Fin de Máster: \emph{Guiado, navegación y control de una flota de barcos autónomos}, \\
-	Matrícula de Honor.}
+    \small
+    Nota media: 9.63. \\
+    Trabajo Fin de Máster: \emph{Guiado, navegación y control de una flota de barcos autónomos}, \\
+    Matrícula de Honor.
+}
 \cventry{9/2003 -- 7/2010}{Ingeniero en Informática}{Universidad Carlos III de Madrid}{}{}{
-	\small
-	Nota media: 7.2. \\
-	Proyecto Fin de Carrera: \emph{Sistema de telemetría y control de un barco autónomo}, \\
-	Matrícula de Honor.}
-
-\section{Experiencia}
-\cventry{desde 12/2010}{Ingeniero}{UCM / \emph{European Defense Agency} / Ministerio de Defensa}{}{}{
-Programa NECSAVE.\newline{}%
-Estudio e investigación en temas de control de flotas de barcos autónomos:%
-\begin{itemize}%
-	\item Control no lineal y modelos de maniobra.
-	\item Estimación no lineal y fusión multisensorial.
-	\item Sistemas de guiado automático.
-\end{itemize}}
-
-\cventry{11/2009 -- 12/2010}{Ingeniero Software}{UCM / Navantia / Ministerio de Defensa}{}{}{
-Programa SIRAMICOR.\newline{}%
-Diseño e implementación de un simulador de barcos autónomos para desminado automático y de una plataforma experimental.\newline{}%
-Trabajos realizados:%
-\begin{itemize}%
-	\item Implementación y simulación de modelos físicos de barcos.
-	\item Diseño e implementación de control automático, tanto en simulación como experimental.
-\end{itemize}}
-
-\cventry{11/2008 -- 11/2009}{Responsable de Software}{UCM / \emph{European Space Agency}}{}{}{
-Proyecto SpaceFish, programa RexusBexus.\newline{}%
-Diseño e implementación de una estación de tierra y el firmware de un autopiloto para un UAV experimental.\newline{}%
-Trabajos realizados:%
-\begin{itemize}%
-	\item Desarrollo de los drivers de bajo nivel de los distintos sensores del autopiloto.
-	\item Implementación de un sistema de registro de datos en una tarjeta SD.
-	\item Desarrollo de un protocolo de comunicación y drivers de radio.
-	\item Desarrollo de una estación de tierra para el UAV.
-\end{itemize}}
+    \small
+    Nota media: 7.2. \\
+    Proyecto Fin de Carrera: \emph{Sistema de telemetría y control de un barco autónomo}, \\
+    Matrícula de Honor.
+}
 
 \section{Idiomas}
 \cvlanguage{Español}{Lengua materna}{}
 \cvlanguage{Inglés}{Nivel alto}{Tanto hablado como escrito. Capaz de mantener una discusión o conversación sin problemas. Escritos varios artículos científicos.}
 
 \section{Competencias informáticas}
-\cvline{Lenguajes de programación}{\small C, C++: Utilizados para el desarrollo de distinto software: firmware para el autopiloto, simulador de vehículos autónomos, estación de tierra, ...}
-\cvline{Software científico}{\small Matlab: Utilizado para prototipado de algoritmos y para visualización de datos}
-\cvline{Sistemas Operativos}{\small Conocimientos extensos de Unix / Linux. Participado activamente en el desarrollo de una distribución de Linux (http://www.gentoo.org).}
+\cvline{Metodologías de desarrollo}{\small Sistema de Gestión de la calidad de GMV Aerospace \&
+    Defense S.A., ECSS-E-ST-40 (ESA).}
+\cvline{Lenguajes de programación}{\small C, C++: Utilizados para el desarrollo de distinto
+    software: firmware para el autopiloto, simulador de vehículos autónomos, estación de tierra,
+    ...}
+\cvline{Software científico}{\small Matlab: Utilizado para prototipado de algoritmos y para
+    visualización de datos}
+\cvline{Sistemas Operativos}{\small Conocimientos extensos de Unix / Linux. Participado activamente
+    en el desarrollo de una distribución de Linux (http://www.gentoo.org).}
 
 \section{Otros datos de interés}
 \cvlistitem{Permiso de conducir B.}
